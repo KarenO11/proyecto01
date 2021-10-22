@@ -1,0 +1,96 @@
+@import "./parcial/media-queries";
+
+/*Propuesta educativa*/
+
+#propuestaEducativa{
+    text-align: left;
+    background-color: #eaf3ff;
+    margin: 20px;
+    border-radius: 10px;
+    
+    @include dispositivo01{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+#propuestaPromocion{
+    background-color: lemonchiffon;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+
+.botonInterno{
+    font-size:20px;
+    letter-spacing: 1px;
+    margin:30px;
+    height: 50px;
+    width: 150px;
+    border-radius: 3px;
+}
+
+.bannerNosotros{
+    margin-left: 400px;
+    height: 500px;
+    width: 700px;
+}
+
+.imgPropuesta{
+    height: 500px;
+    width: auto;
+
+}
+
+.promocion{
+    color: red;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+
+.videoPropuesta{
+    position: relative;
+    width: auto;
+    height: 150px;
+    padding-left: 500px;
+
+    @include dispositivo01{
+        padding-left: 150px;
+    }    
+}
+
+
+.propuestasEducativas{
+    border-style: ridge;
+    border-color: lightblue;
+    margin: 2rem 4rem;
+    padding: 25px;
+    box-shadow: 5px 5px #0e70c7;
+}
+
+.centerPropuesta{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.espacioPropuesta{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.propuestaEspacico{
+    padding: 50px;
+}
+
+.ordenarPropuestas{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*Fin propuesta educativa*/

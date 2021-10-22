@@ -1,0 +1,123 @@
+
+@import "./parcial/media-queries";
+
+/*Servicios*/
+#listaServicio{
+    font-size: 1rem;
+    margin: 2rem 4rem;
+    padding-left: 450px;
+
+    @include dispositivo01{
+        width: 32px;
+        height: auto;
+        margin:1px;
+        padding-left: 0px;
+    }
+}
+
+.servicios{
+    border: 1px solid #eaf3ff;
+    border-radius: 20px;
+
+    &__servicioVariado{
+        border-style: ridge;
+        margin: 2rem 2rem;
+        border-radius: 10px;
+    }
+
+    &__imagenServicio{
+        border-radius: 10px;
+        width: 400px;
+        height: 250px;
+        padding: 20px;
+
+        @include dispositivo01{
+            width: 280px;
+            height: auto;
+            padding:15px;
+        }
+    }
+
+    &__descripcionServicios{
+        padding: 20px;
+    }
+
+    &__subtituloServicio{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}
+
+.noticiasServicios{
+    font-size: 2rem;
+    background-color: #eaf3ff;
+    padding-left: 100px;    
+}
+
+.colorServicio{
+    background: $colorservicio;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+
+.serviciosTitulo{
+    font-size: 2rem;
+}
+
+
+.ordenServicios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    @include dispositivo01{
+        display: grid;
+        grid-template-columns: repeat(2,380px);
+       align-items: center;
+    }
+}
+
+
+/*Fin de servicios*/
+
+
+/* Menu*/
+.navegacion{
+    width: 100%; 
+    margin:auto;
+}
+
+.navegacion ul > li{
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+  
+.sub-lista{
+    position: absolute;
+    background-color: turquoise;
+    width: 100%;
+    display: none;
+}
+
+.main-lista:hover .sub-lista{
+    display: block;
+    cursor: pointer;
+}
+
+
+/*Seccion Exitos*/
+
+#exitos{
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 2%, rgba(7,63,157,1) 7%, rgba(7,73,164,1) 12%, rgba(5,119,194,1) 26%, rgba(5,122,196,1) 28%, rgba(0,212,255,1) 100%);;
+}
+
+
+.card-img-top{
+    width: 270px;
+    height: 300px;
+    @include dispositivo01();
+}
+
+

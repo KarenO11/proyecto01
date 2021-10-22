@@ -1,0 +1,79 @@
+@import "./parcial/media-queries";
+
+/*-------Página Contacto-----*/
+/*Contacto*/
+
+#formularioContacto{
+    margin: 2rem 4rem;
+}
+
+/*Formulario*/
+
+.formulario{
+    &__tituloContactanos{
+        color: crimson;    
+    }
+
+    &__camposContactanos{
+        color:#241398 ;
+    }
+}
+
+input:focus{
+    font-size: 16px;
+}
+
+
+/*Tabla*/
+
+fieldset{
+    padding:25px;
+}
+
+section table tr th{
+    color: #fff;
+}
+
+section{
+    table{
+        tr{
+            th{
+                color: #fff;
+            }
+        }
+    }
+}
+
+td{
+    ol{
+        li{
+            list-style-position: inside;
+        }
+    }
+}
+
+
+.seccion02{
+    padding-top: 350px;
+}
+ 
+.textoContacto{
+    color: #fff;
+}
+
+
+$celeste:#24324a;
+$azul:#241398;
+
+ .imagenContacto__01{
+        background-color: $celeste;
+ }
+
+ .imagenContacto__02{
+        background-color: $azul;
+ }
+
+
+
+
+/*Fin página contacto */

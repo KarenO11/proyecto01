@@ -1,0 +1,7 @@
+@mixin dispositivo01{
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+

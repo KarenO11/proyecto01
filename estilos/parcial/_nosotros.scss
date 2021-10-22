@@ -1,0 +1,198 @@
+
+@import "./parcial/media-queries";
+/*-----Página Nosotros ----*/
+/*Nosotros*/
+
+.nosotros{
+    border: solid 2px whitesmoke;
+
+    &__descripcionNosotros{
+        padding: 50px;
+    }
+
+    &__nosotros_interNosotros{
+        padding-top: 30px;
+        padding-left: 50px;
+    }
+}
+
+.testimonios{
+    padding: 30px;
+    text-align: center;
+}
+
+@for $i from 1 through 3 {
+    .testimonios__0#{$i} {
+         font-size: 15px * $i; 
+    }
+}
+
+
+   
+
+.nosotrosTitulo{
+    font-size: 2rem;
+    background-color: #eaf3ff;
+}
+
+#banner02{
+    background-image: url(../img/banner02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 550px;
+    width: auto;
+    opacity: 85%;
+}
+
+#banner02 .tituloBanner{
+    margin-right: 30px;
+}
+
+
+.bounce-top {
+	-webkit-animation: bounce-top 0.9s steps(2, end) both;
+	        animation: bounce-top 0.9s steps(2, end) both;
+}
+
+/* Animacion*/
+ @-webkit-keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  @keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  
+.imagenNosotros{
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20%;
+}
+
+#nosotros__historiaNosotros{
+    padding: 10px;
+}
+
+#fotosNosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+#valores{
+    ol{
+        li{
+            padding-bottom: 20px;  
+        }
+    }
+}
+
+
+
+.valoresNosotros{
+    padding:50px;
+}
+
+/*Fin página nosotros*/

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    padding:5px;
+    color: #fff;
+}
+
+h2{
+    color: #2416D3 ;
+}
+
+h3{
+	color: firebrick; 
+	margin: 10px; 
+}
+
+h4{
+    color: grey;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    margin: 1rem;
+
+    &:hover{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+
+
+#grilla {
+    display: grid;
+    height: 40vh;
+    @include dispositivo01();
+}
+
+
+#fotosNosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @include dispositivo01();
+}
+
+.imagenNosotros {
+    width: 250px;
+    height: 350px;
+    border-radius: 20%;
+
+    @include dispositivo01();
+}
+
+.espacioPropuesta{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+
+    @include dispositivo01();
+}
+
+.ordenNivel{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    @include dispositivo01();
+}
+

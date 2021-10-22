@@ -1,0 +1,231 @@
+@import "./parcial/body";
+@import "./parcial/home";
+@import "./parcial/variables";
+@import "./parcial/media-queries";
+@import "./parcial/propuesta-educativa";
+@import "./parcial/nosotros";
+@import "./parcial/contacto";
+@import "./parcial/noticias";
+@import "./parcial/servicios";
+@import "./parcial/pagina404";
+
+/*Media Queries*/
+@media only screen and (max-width: 1200px){
+
+    #grilla{
+        display: grid;
+        height: 50vh;
+    }
+
+    .main-lista{
+        padding-bottom: 20px;
+    }
+
+
+    @mixin tamano($padding){
+        width: 300px;
+        height: auto;
+        padding: $padding;
+    }
+
+    .niveles{
+        @include tamano(10px);
+    }
+
+    .pequenoNivel{
+        @include tamano(2px);
+    } 
+
+
+    #propuestaPromocion{
+        background-color: yellow;
+    }
+
+    .centerPropuesta{
+        background-color: wheat;
+        text-shadow: 1px 1px 2px black;
+        border-radius: 20px;
+        margin: 5px;
+    }
+
+    
+  
+    .videoPropuesta{
+        padding-left: 400px;
+    }
+
+    #listaServicio{
+        width: 32px;
+        height: auto;
+        margin:1px;
+        padding-left: 0px;
+    }
+    
+    .servicios__imagenServicio{
+        width: 280px;
+        height: auto;
+        padding:15px;
+    }
+
+    .ordenServicios{
+        display: grid;
+        grid-template-columns: repeat(3,380px);
+       align-items: center;
+    }
+
+    .colorServicio{
+        margin: 50px;
+        width: 400px;
+        height: auto;
+        background-color: lightskyblue;
+
+    }
+    
+    em{
+        background-color: lightcoral;
+    }
+
+    #contactanosLocalizacion{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+    #grilla{
+        background-color: aliceblue;
+        grid-template-columns: 100%;
+
+    }
+    .videoPresentacion{
+        display: none;
+    }
+
+    .ordenNivel{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .convenios__logoGrid{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        
+    }
+
+    .espacioPropuesta{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exitos_espaciado{
+        padding-left: 90px;
+    }
+
+    .testimonios_01{
+        display: none;
+    }
+
+    .containerFooter{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .centerPropuesta{
+        background-color: whitesmoke;
+        text-shadow: 1px 1px 2px black;
+        border-radius: 50px;
+        margin: 5px;
+    }
+
+    #propuestaPromocion{
+        background-color: cornflowerblue;
+        font-size: 30px;
+    }
+
+    .videoPropuesta{
+        padding-left: 20px;
+    }
+
+    #listaServicio{
+        width: 32px;
+        height: auto;
+        margin:1px;
+        padding-left: 0px;
+    }
+    
+    .servicios__imagenServicio{
+        width: 280px;
+        height: auto;
+        padding:15px;
+    }
+
+    .ordenServicios{
+        display: grid;
+        grid-template-columns: repeat(1,350px);
+        justify-content: center;
+    }
+
+    .colorServicio{
+        margin: 50px;
+        width: 350px;
+        height: auto;
+
+    }
+    
+    .seccion02{
+        padding-top: 0px;
+    }
+    
+
+
+    .imgCalidad01{
+        border:none;
+    }
+
+    .imgCalidad02{
+        border:none;
+    }
+
+    .imgCalidad03{
+        border:none;
+    }
+    
+
+    #fotosNosotros{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 80px;
+    }
+
+    .imagenNosotros {
+        width: 280px;
+        height: 350px;
+        border-radius: 20%;
+    }
+
+    .propuestaEspacico{
+        padding-right: 70px;
+        margin: 5px;
+    }
+
+   
+    .bordeNoticias{
+        width: 450px;
+    }
+
+    .videoNoticias{
+        height: 250px;
+        width: auto;
+    }
+
+
+}
+
+
+.breadcumbs{
+    background-color: black;
+}
+ 

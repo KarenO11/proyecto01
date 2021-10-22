@@ -1,0 +1,412 @@
+@import "./parcial/media-queries";
+
+section{
+    p{
+        color: darkblue; 
+		font-size: 16px; 
+    }
+    table{
+        tr{
+            th{
+                color: #fff;
+            }
+            td{
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+
+#nivelesEducacion{
+    position: relative;
+    color: slategrey;
+}
+
+.nivelEstilo{
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.videoPresentacion{
+    width: auto;
+    height: 350px;
+    padding: 20px;
+}
+
+/*Breadcumbs*/
+
+.breadcumbs{
+    background-color: #f8f8f8;
+}
+
+/*Header*/
+.navbar-light .navbar-nav .nav-link.active 
+{
+    color: #fff;
+
+    &-brand{
+        color: #fff;
+    }
+    
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+}
+
+
+.navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color:black;
+}
+
+
+.navGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+
+
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 0.4s steps(2, end) 1s both;
+	        animation: tracking-in-expand-fwd 0.4s steps(2, end) 1s both;
+}
+
+/*Animacion*/
+
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  ul {
+      li {
+    position: relative;
+    display: inline-block;
+    }
+  }
+
+
+.padrePresentacion{
+    display: flex;
+    flex-direction: row;
+
+    &__descripcionColegio{
+        padding: 40px;
+    }
+
+    &__tituloPrincipal{
+        padding: 16px;
+        font-size: 32px;
+        color: darkblue;   
+    }
+
+    &__textoColegio{
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    &__colorOpcional{
+        font-size: 30px;
+        color: #fff;
+    }
+
+    @include dispositivo01{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/*Fin de header*/
+
+
+/*Footer*/
+footer{
+    background-color: #24324a;
+    color: #fff;
+}
+
+.containerFooter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 16px 16px 0px 16px;
+    padding: 1rem;
+
+    &__espacioFooter{
+        margin: 10px;
+        padding: 10px;
+        padding-left: 30px;
+    }
+}
+/*Footer*/
+
+
+/*Imágenes Index*/
+
+/*Banner 01*/
+#banner01{
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 450px;
+    width: auto;
+    opacity: 85%;
+}
+
+.imagenBanner{
+    opacity: 70%;
+}
+
+.contenedorBanner{
+    position: relative;
+    top:70px;
+    text-align: center;
+}
+
+.tituloBanner{
+    font-size: 3rem;
+    text-align: left;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    padding:50px;
+}
+
+
+.conocerMas{
+    font-size:1rem;
+    background-color: #0e70c7;
+    color: #fff;
+    letter-spacing: 1px;
+    height: 50px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px #0e70c7;
+}
+/*Fin de banner */
+
+/*Index- Presentacion colegio*/
+
+#presentacionColegio{
+    background-color: #eaf3ff;
+    padding: 30px 15px ;
+}
+
+/*Niveles*/
+
+.nivelesColegio{
+    &__tituloNivel{
+        text-align: center;
+        margin: 20px 10px 15px 10px; 
+    }
+
+    &__niveles{
+        border-style: ridge;
+        margin: 20px 20px;
+        border-radius: 10px;
+        font-size: 1rem; 
+    }
+
+    &__descripcionNiveles{
+        margin: 20px ;
+    }
+
+    &__ordenNivel{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.nivelesColegio__ordenNivel{
+    padding: 20px;
+}
+    
+
+
+.btn {
+    font-size:1rem;
+    margin:10px;
+}
+
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s steps(3, end) 1s infinite both;
+	        animation: heartbeat 1.5s steps(3, end) 1s infinite both;
+}
+
+
+/* Animacion */
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+
+.pequeno{
+    height: 500px;
+    width: 700px;
+}
+
+.pequenoNivel
+{
+    height: 200px;
+    width: 400px;
+    margin: 5px;
+    padding: 10px 20px;
+
+}
+/*Fin de Niveles*/
+
+/*Exitos*/
+.exitos__tituloNivel{
+    text-align: center;
+    margin: 20px 10px 15px 10px;
+}
+/*Fin Exitos*/
+
+
+/*Convenios logos*/
+
+#convenios{
+    text-align: center;
+}
+
+.convenios{
+    &__conveniosColegio{
+        color: slategray;
+        letter-spacing: 2px;
+    }
+
+    &__imagenLogo{
+        width: 180px;
+        height: 100px;
+        margin: 8px;
+
+        &:hover{
+            transform: scale(1.5,1);
+        }
+    }
+}
+
+
+
+.imgCalidad01{
+    border: 3px solid yellow;
+}
+
+.imgCalidad02{
+    border: 3px solid red;
+}
+
+
+.imgCalidad03{
+    border: 3px solid blue;
+}
+
+
+/*Fin de logos*/
+/*Fin de Home*/
+
+
