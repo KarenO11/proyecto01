@@ -1,13 +1,13 @@
-@import "./parcial/body";
-@import "./parcial/home";
-@import "./parcial/variables";
-@import "./parcial/media-queries";
-@import "./parcial/propuesta-educativa";
-@import "./parcial/nosotros";
-@import "./parcial/contacto";
-@import "./parcial/noticias";
-@import "./parcial/servicios";
-@import "./parcial/pagina404";
+@import "../scss/parcial/body";
+@import "../scss/parcial/home";
+@import "../scss/parcial/variables";
+@import "../scss/parcial/media-queries";
+@import "../scss/parcial/propuesta-educativa";
+@import "../scss/parcial/nosotros";
+@import "../scss/parcial/contacto";
+@import "../scss/parcial/noticias";
+@import "../scss/parcial/servicios";
+@import "../scss/parcial/pagina404";
 
 /*Media Queries*/
 @media only screen and (max-width: 1200px){
